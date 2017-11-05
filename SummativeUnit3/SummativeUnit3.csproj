@@ -82,5 +82,155 @@
   <ItemGroup>
     <None Include="Resources\rd9eICf.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\firstForest.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dchbsj.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\168741995.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\komodo-dragon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thHZWRM9WA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7032697_medium_1498355333.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small-beach-area-of-the.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\91644300.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barefooting-turkey.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thQTTZ6EYS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\th1S2E3DJK.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\liquidvision.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\291355772301_1_0_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1B010422_0001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brazil432.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash-on-the-beach.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6823546215_d235580022_b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\big_airline-first-aid-kit-afak.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B96bxaCIIAAPsjc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\84c8c2cf56004c4842b5c7b9c637ffed8214_DSC_0649.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thMPRKVD3M.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flare_gun orion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1378866653_547_1000x667x0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\155079016_betsey-johnson-metallic-python-black-pink-blue-laptop-.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lighter_1292320c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\th38OQ41IU.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guntherdec2013.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pilot-hat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62891c_lg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FM57011_full_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\article-2146367-1327B475000005DC-328_634x439.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PoisnDngr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\savior-rescuer-salvation-hand-man-drowning-saved-by-lifeguard-underwater-sun-shining-rescue-new-hope-second-chance-concept-gopro-h.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thVN1Q0RG4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Azden_35BT_35BT_Portable_Wireless_Bodypack_564564.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AOMWAY-5.8G-200mw-Transmitter-manual.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\il_fullxfull.705162782_k8zi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidewinder-robotics-closeup.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forest-fire-2268729_640.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9068-Waterfall-In-The-Forest.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\th7F97FWLR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2650335652_7d45d03bac_z.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scorpion3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pointy-top-rock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\falling-coconut-700x466.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The-Pitcairn-Islands_Local-village_9401.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forest0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p-93.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lightning-strikes-the-water-off-henley-beach-data.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WoodMackenzie-Lack-of-Water-is-a-Risk-to-Global-Energy-Industry.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
