@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace SummativeUnit3
 {
@@ -15,8 +16,10 @@ namespace SummativeUnit3
     {
         //Tracks what part of the game the user is at
         int scene = 0;
+        //int for random outcomes
         int theNumber;
-
+        //Sound Players
+        SoundPlayer successPlayer = new SoundPlayer(Properties.Resources.success);
         public chooseYourOwnAdventure()
         {
             // Random Number Generator
@@ -450,14 +453,16 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.rescue;
                     this.Controls.Add(imageLabel);
+                    successPlayer.Play();
                     break;
                 case 32:
                     situationLabel.Text = "You are in the woods calling for Zuza when you hear a distant barking. You get excited when you spot a German shepard, when it begins to run you follow it all the way to a small town. The people explain you are on an island called Pitcairn, located in the middle of the Pacific. Congratulations, you and Zuza saved yourselves and many others. Would you like to play again?"; //Success
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
-                    imageLabel.Image = Properties.Resources.dog;
+                    imageLabel.Image = Properties.Resources.pitcairn;
                     this.Controls.Add(imageLabel);
+                    successPlayer.Play();
                     break;
                 case 33:
                     situationLabel.Text = "You begin to walk away from the man when you step on a large snake. Unfortunately it's not a forgiving species, it bites you, you die. Would you like to play again?"; //Death
@@ -481,6 +486,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.rescue;
                     this.Controls.Add(imageLabel);
+                    successPlayer.Play();
                     break;
                 case 36:
                     situationLabel.Text = "It is now night time, you are ready to fire your flare and because you only have one chance and you need to concentrate. Just as you are about to shoot, a large animal burst out of the bushes and is now coming at you, you approach the situation by...";
@@ -545,6 +551,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.rescue;
                     this.Controls.Add(imageLabel);
+                    successPlayer.Play();
                     break;
                 case 45:
                     situationLabel.Text = "It's now night time, you are ready to fire your flare and because you only have one chance and you need to concentrate. Just as you are about to shoot, a large animal burst out of the bushes and is now coming at you, you approach the situation by...";
@@ -567,6 +574,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.portableTransmitter;
                     this.Controls.Add(imageLabel);
+                    successPlayer.Play();
                     break;
                 case 48:
                     situationLabel.Text = "";
@@ -581,6 +589,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.rescue;
                     this.Controls.Add(imageLabel);
+                    successPlayer.Play();
                     break;
                 case 50:
                     situationLabel.Text = "Unfortunately the items you chose to burn were covered in fuel which then got on your hands, when you try to light, you are the one who sets on fire. Would you like to play again?"; //Death
@@ -629,6 +638,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.pitcairn;
                     this.Controls.Add(imageLabel);
+                    successPlayer.Play();
                     break;
                 case 56:
                     situationLabel.Text = "You don't get out of the woods before nightfall then you are lost alone and you fall into a large pit, trapping you indeffinetly. Would you like to play again?"; //Death
@@ -669,6 +679,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.rescue;
                     this.Controls.Add(imageLabel);
+                    successPlayer.Play();
                     break;
                 case 61:
                     situationLabel.Text = "You are no match to the beast and you are violently killed and mangled. Would you like to play again?"; //Death
@@ -701,6 +712,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.rescue;
                     this.Controls.Add(imageLabel);
+                    successPlayer.Play();
                     break;
                 case 65:
                     situationLabel.Text = "No one notices the flare a raging storm hits the beach during the night, you are struck by lightning. Would you like to play again?"; //Death
@@ -709,6 +721,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.lightning;
                     this.Controls.Add(imageLabel);
+                    successPlayer.Play();
                     break;
                 case 66:
                     situationLabel.Text = "You fire the flare and someone spots your signal from a plane. Rescue comes a few hours later. Congratulations, you have saved yourself and many others. Would you like to play again?"; //Success
@@ -717,6 +730,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.rescue;
                     this.Controls.Add(imageLabel);
+                    successPlayer.Play();
                     break;
 
             }
