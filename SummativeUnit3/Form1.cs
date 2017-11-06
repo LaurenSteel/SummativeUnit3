@@ -20,6 +20,7 @@ namespace SummativeUnit3
         int theNumber;
         //Sound Players
         SoundPlayer successPlayer = new SoundPlayer(Properties.Resources.success);
+        SoundPlayer failurePlayer = new SoundPlayer(Properties.Resources.failure);
         public chooseYourOwnAdventure()
         {
             // Random Number Generator
@@ -41,7 +42,7 @@ namespace SummativeUnit3
                 else if (scene == 2) { scene = 3; }
                 else if (scene == 3) { scene = 7; }
                 else if (scene == 7) { scene = 12; }
-                else if (scene == 12) { scene = 19; }
+                else if (scene == 12) { scene = 20; }
                 else if (scene == 19) { scene = 37; }
                 else if (scene == 5) { scene = 9; }
                 else if (scene == 9) { scene = 15; }
@@ -139,6 +140,7 @@ namespace SummativeUnit3
                 else if (scene == 17) { scene = 33; }
                 else if (scene == 18) { scene = 36; }
                 else if (scene == 36) { scene = 58; }
+                else if (scene == 12) { scene = 19; }
                 //
                 else if (scene == 28)
                 {
@@ -221,6 +223,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.komodoDragon;
                     this.Controls.Add(imageLabel);
+                    failurePlayer.Play();
                     break;
                 case 2:
                     situationLabel.Text = "You lift yourself up and the way you see it you have three different ways to go. You choose to go...";
@@ -245,6 +248,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.deeperIntoForest;
                     this.Controls.Add(imageLabel);
+                    failurePlayer.Play();
                     break;
                 case 5:
                     situationLabel.Text = "You get to highground and spot the front end of the plane a while down the beach to your right. Then to your left a few miles down, smoke is emerging from just inside the woods. The smoke is thick but you can tell it's coming from the tail end of the plane, you go...";
@@ -277,6 +281,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.underTow;
                     this.Controls.Add(imageLabel);
+                    failurePlayer.Play();
                     break;
                 case 9:
                     situationLabel.Text = "As soon as you get to the front end of the plane the first thing you see is a first aid kit and you can vaguely hear people screaming down the beach, you...";
@@ -293,6 +298,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.rocksFalling;
                     this.Controls.Add(imageLabel);
+                    failurePlayer.Play();
                     break;
                 case 11:
                     situationLabel.Text = "You are on your way to the smoking tail when you pass by many people who are injured, you...";
@@ -417,12 +423,14 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.komodoDragon;
                     this.Controls.Add(imageLabel);
+                    failurePlayer.Play();
                     break;
                 case 27:
                     situationLabel.Text = "Unfortunately the person trying to help you is almost as unqualified as you are when it comes to medicine. They make some vital, deathly, mistakes. Would you like to play again?"; //Death
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    failurePlayer.Play();
                     break;
                 case 28:
                     situationLabel.Text = "The lady you are helping tells you of her severe plane crash phobia. You start to pay attention when she tells you she always keeps a portable transmitter in her blue carry on. After searching through what seemed like a million blue suitcases, you find the right bag. The transmitter is straght forward and still in tack. You recieve a signal and rescue comes two hours later. Congratulations, you save yourself and many others. Would yu like to play again?";
@@ -431,6 +439,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.blueCarryOn;
                     this.Controls.Add(imageLabel);
+                    successPlayer.Play();
                     break;
                 case 29:
                     situationLabel.Text = "You are able to locate a flight attendant with an injured leg on the beach. You convince her to come to the cockpit by telling her that you will fix her up with the supplies from the first aid kit. When you get there, together you successfully run the transmitter, recieve a signal and rescue comes two hours later. Congratulations, you saved yourself and many others. Would you like to play again?"; //Success
@@ -445,6 +454,9 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    imageLabel.Image = Properties.Resources.elecrtrocuted;
+                    this.Controls.Add(imageLabel);
+                    failurePlayer.Play();
                     break;
                 case 31:
                     situationLabel.Text = "You continue to search the cockpit for indicators, instructions or anything that would help with the maintnance of the transmitter. After awhile you locate an instruction manual and get the transmitter to work all by yourself, you recieve a signal and rescue troops arrive two hours later. Congratulations, you saved yourself and many others. Wwould you like to play again?"; //Success
@@ -470,6 +482,7 @@ namespace SummativeUnit3
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = ""; imageLabel.Image = Properties.Resources.snake;
                     this.Controls.Add(imageLabel);
+                    failurePlayer.Play();
                     break;
                 case 34:
                     situationLabel.Text = "Your flare goes unnoticed but it does clip a tree which causes a large forest fire to igniting the remainder of the tail and causing large explosion killing you and many other of the remaining survivors are blown to smitherines. You went out with a bang. Would you like to play again."; //Death
@@ -478,6 +491,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.forestFire;
                     this.Controls.Add(imageLabel);
+                    failurePlayer.Play();
                     break;
                 case 35:
                     situationLabel.Text = "A boat was just close enough to notice your flare. They notify search and rescue, who come within just a few hours. Congratulations you saved yourself and many others. Would you like to play again?"; //Success
@@ -499,6 +513,7 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    failurePlayer.Play();
                     break;
                 case 38:
                     situationLabel.Text = "You find water in the forest, it is so glorious you decide to rinse off but the current is strong and then, oh no, water fall ahead there is no way to escape. Would you like to play again?"; //Death
@@ -507,12 +522,14 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.waterFall;
                     this.Controls.Add(imageLabel);
+                    failurePlayer.Play();
                     break;
                 case 39:
                     situationLabel.Text = "It's salt water, you drink to much, making you sick and bringing you death. Would you like to play again?"; //Death
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    failurePlayer.Play();
                     break;
                 case 40:
                     situationLabel.Text = "after searching you are able to find the frontend of the plane where you locate the transmitter. Too bad it was getting dark and had no knowledge in technology, you get frustrated ending in electrocution. Would you like to play agian?"; //Death
@@ -521,6 +538,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.elecrtrocuted;
                     this.Controls.Add(imageLabel);
+                    failurePlayer.Play();
                     break;
                 case 41:
                     situationLabel.Text = "You start to walk around the beach but it gets dark fast and you are now very far from the other survivors. You are now tired so you try to sleep by the edge of a the small mountain, unfortunately, large falling rocks crush you in your sleep. Would you like to play again?"; //Death
@@ -529,6 +547,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.boulders;
                     this.Controls.Add(imageLabel);
+                    failurePlayer.Play();
                     break;
                 case 42:
                     situationLabel.Text = "Because of the large amount of smoke coming from the back end of the plane you are able to locate the tail and with that, the flare gun. There is only one small problem you only have one flare. Because it's now dark out there is an 85% chance that your flare will be seen, you fire the flare.";
@@ -543,6 +562,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.forestFire;
                     this.Controls.Add(imageLabel);
+                    failurePlayer.Play();
                     break;
                 case 44:
                     situationLabel.Text = "Someone in a low flying plane notices your flare. Rescue arrives a few hours later. Congratulations, you ahve saved yourself and many others. Would you like to play again?"; //Success
@@ -566,21 +586,23 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.scorpion;
                     this.Controls.Add(imageLabel);
+                    failurePlayer.Play();
                     break;
                 case 47:
                     situationLabel.Text = "You find no food or water but you do find a portable transmitter in full function. The transmitter is straght forward and still in tack. You recieve a signal and rescue comes two hours later. Congratulations, you save yourself and many others. Would you like to play again?"; //Success
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
-                    imageLabel.Image = Properties.Resources.portableTransmitter;
+                    imageLabel.Image = Properties.Resources.portableTransmitter; 
                     this.Controls.Add(imageLabel);
                     successPlayer.Play();
                     break;
                 case 48:
-                    situationLabel.Text = "";
+                    situationLabel.Text = "A snake emerges from the bag and bites ";
                     aOutputLabel.Text = "Yes.";
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    failurePlayer.Play();
                     break;
                 case 49:
                     situationLabel.Text = "You head to the edge of the forest and manage to gather up a fair amount of wood and kindling, luckily you make it back before it's completely dark so you don't get lost. You are able to successfully start a large fire. Large enough to signal a low flying plane who then informs search and rescue. They arrive a few hours later. Congratulations, you save yourself and many others. Would you like to play again?"; //Success
@@ -598,6 +620,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.flame;
                     this.Controls.Add(imageLabel);
+                    failurePlayer.Play();
                     break;
                 case 51:
                     situationLabel.Text = "Unfortunately you catch something too big and it drags you in. Atleast someone got a snack. Would you like to play again?"; //Death
@@ -606,6 +629,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.drownDeath;
                     this.Controls.Add(imageLabel);
+                    failurePlayer.Play();
                     break;
                 case 52:
                     situationLabel.Text = "Too bad those berries you just ate were poisoness. Would you like to play again?"; //Death
@@ -614,6 +638,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.poison;
                     this.Controls.Add(imageLabel);
+                    failurePlayer.Play();
                     break;
                 case 53:
                     situationLabel.Text = "You try to climb the tree but end up falling and landing on a rock. Would you like to play again?"; //Death
@@ -622,6 +647,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.pointyRock;
                     this.Controls.Add(imageLabel);
+                    failurePlayer.Play();
                     break;
                 case 54:
                     situationLabel.Text = "A large bunch of coconuts come crashing down on your head, you suffer major brain damage. Would you like to play again?"; //Death
@@ -630,6 +656,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.fallingCoconuts;
                     this.Controls.Add(imageLabel);
+                    failurePlayer.Play();
                     break;
                 case 55:
                     situationLabel.Text = "The dog is calm and appears to have a collar. Her name appears to be Zuza, you assume that she belonged to a passenger on the plane so when she runs, you follow her. After what seems to have been miles of running you realize she has brough you to civilization. Congratulations, you and Zuza have saved yourselves and many others. Would you like to play again?"; //Success
@@ -647,6 +674,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.pit;
                     this.Controls.Add(imageLabel);
+                    failurePlayer.Play();
                     break;
                 case 57:
                     situationLabel.Text = "You are no match to the beast and you are violently killed and mangled. Would you like to play again?"; //Death
@@ -655,6 +683,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.komodoDragon;
                     this.Controls.Add(imageLabel);
+                    failurePlayer.Play();
                     break;
                 case 58:
                     situationLabel.Text = "The animal becomes frightened and runs back into the bushes you then fire the flare.";
@@ -671,6 +700,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.lightning;
                     this.Controls.Add(imageLabel);
+                    failurePlayer.Play();
                     break;
                 case 60:
                     situationLabel.Text = "Your flare is spotted by someone out boating, rescue comes a few hours later. Congratulations, you save yourself and many others. Would you like to play again?"; //Success
@@ -688,6 +718,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.komodoDragon;
                     this.Controls.Add(imageLabel);
+                    failurePlayer.Play();
                     break;
                 case 62:
                     situationLabel.Text = "The animal becomes frightened and runs back into the bushes you then fire the flare.";
@@ -696,6 +727,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.flare;
                     this.Controls.Add(imageLabel);
+                    failurePlayer.Play();
                     break;
                 case 63:
                     situationLabel.Text = "No one notices the flare, a raging storm hits the beach during the night, you are struck by lightning. Would you like to play again?"; //Death
@@ -704,6 +736,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.lightning;
                     this.Controls.Add(imageLabel);
+                    failurePlayer.Play();
                     break;
                 case 64:
                     situationLabel.Text = "You fire the flare and someone spots your signal from a plane. Rescue comes a few hours later. Congratulations, you save yourself and many others. Would you like to play again?"; //Success

@@ -232,5 +232,8 @@
   <ItemGroup>
     <None Include="Resources\WoodMackenzie-Lack-of-Water-is-a-Risk-to-Global-Energy-Industry.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\362206__taranp__horn-fail-wahwah-1.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
