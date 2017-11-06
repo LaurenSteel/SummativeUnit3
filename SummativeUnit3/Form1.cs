@@ -141,7 +141,7 @@ namespace SummativeUnit3
                 else if (scene == 18) { scene = 36; }
                 else if (scene == 36) { scene = 58; }
                 else if (scene == 12) { scene = 19; }
-                //
+                //Close program if they don't want to play again 
                 else if (scene == 28)
                 {
                     Application.Exit();
@@ -598,10 +598,12 @@ namespace SummativeUnit3
                     successPlayer.Play();
                     break;
                 case 48:
-                    situationLabel.Text = "A snake emerges from the bag and bites ";
+                    situationLabel.Text = "A snake emerges from the bag and bites you. It doesn't take long for his venom to kick in. Would you like to play again?";
                     aOutputLabel.Text = "Yes.";
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    imageLabel.Image = Properties.Resources.snake;
+                    this.Controls.Add(imageLabel);
                     failurePlayer.Play();
                     break;
                 case 49:
