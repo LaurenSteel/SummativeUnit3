@@ -21,6 +21,7 @@ namespace SummativeUnit3
         //Sound Players
         SoundPlayer successPlayer = new SoundPlayer(Properties.Resources.success);
         SoundPlayer failurePlayer = new SoundPlayer(Properties.Resources.failure);
+        SoundPlayer flarePlayer = new SoundPlayer(Properties.Resources.flareSound);
         public chooseYourOwnAdventure()
         {
             // Random Number Generator
@@ -46,6 +47,7 @@ namespace SummativeUnit3
                 else if (scene == 19) { scene = 37; }
                 else if (scene == 5) { scene = 9; }
                 else if (scene == 9) { scene = 15; }
+                else if (scene == 14) { scene = 23; }
                 else if (scene == 15) { scene = 26; }
                 else if (scene == 11) { scene = 17; }
                 else if (scene == 17) { scene = 32; }
@@ -70,48 +72,9 @@ namespace SummativeUnit3
                 else if (scene == 62 && theNumber > 85) { scene = 65; }
                 else if (scene == 58 && theNumber < 85) { scene = 64; }
                 else if (scene == 58 && theNumber > 85) { scene = 63; }
-                //Restart after loosing
-                else if (scene == 37) { scene = 0; }
-                else if (scene == 38) { scene = 0; }
-                else if (scene == 39) { scene = 0; }
-                else if (scene == 40) { scene = 0; }
-                else if (scene == 41) { scene = 0; }
-                else if (scene == 59) { scene = 0; }
-                else if (scene == 43) { scene = 0; }
-                else if (scene == 61) { scene = 0; }
-                else if (scene == 65) { scene = 0; }
-                else if (scene == 46) { scene = 0; }
-                else if (scene == 48) { scene = 0; }
-                else if (scene == 50) { scene = 0; }
-                else if (scene == 51) { scene = 0; }
-                else if (scene == 52) { scene = 0; }
-                else if (scene == 53) { scene = 0; }
-                else if (scene == 54) { scene = 0; }
-                else if (scene == 56) { scene = 0; }
-                else if (scene == 4) { scene = 0; }
-                else if (scene == 1) { scene = 0; }
-                else if (scene == 27) { scene = 0; }
-                else if (scene == 26) { scene = 0; }
-                else if (scene == 8) { scene = 0; }
-                else if (scene == 10) { scene = 0; }
-                else if (scene == 30) { scene = 0; }
-                else if (scene == 33) { scene = 0; }
-                else if (scene == 34) { scene = 0; }
-                else if (scene == 57) { scene = 0; }
-                else if (scene == 63) { scene = 0; }
-                //Restart after winning
-                else if (scene == 28) { scene = 0; }
-                else if (scene == 29) { scene = 0; }
-                else if (scene == 31) { scene = 0; }
-                else if (scene == 32) { scene = 0; }
-                else if (scene == 35) { scene = 0; }
-                else if (scene == 44) { scene = 0; }
-                else if (scene == 47) { scene = 0; }
-                else if (scene == 49) { scene = 0; }
-                else if (scene == 55) { scene = 0; }
-                else if (scene == 60) { scene = 0; }
-                else if (scene == 64) { scene = 0; }
-                else if (scene == 66) { scene = 0; }
+                //Restart program if they want to play again
+                else if (scene == 37 || scene == 38 || scene == 39 || scene == 40 || scene == 41 || scene == 59 || scene == 43 || scene == 61 || scene == 65 || scene == 46 || scene == 48 || scene == 50 || scene == 51 || scene == 52 || scene == 53 || scene == 54 || scene == 56 || scene == 55 || scene == 60 || scene == 66) { scene = 0; }
+                else if (scene == 4 || scene == 1 || scene == 27 || scene == 26 || scene == 8 || scene == 10 || scene == 30 || scene == 33 || scene == 34 || scene == 57 || scene == 63 || scene == 28 || scene == 29 || scene == 31 || scene == 32 || scene == 35 || scene == 44 || scene == 47 || scene == 49 || scene == 64) { scene = 0; }
             }
             else if (e.KeyCode == Keys.B)
             {
@@ -142,55 +105,15 @@ namespace SummativeUnit3
                 else if (scene == 36) { scene = 58; }
                 else if (scene == 12) { scene = 19; }
                 //Close program if they don't want to play again 
-                else if (scene == 28)
+                else if (scene == 37 || scene == 38 || scene == 39 || scene == 40 || scene == 41 || scene == 59 || scene == 43 || scene == 61 || scene == 65 || scene == 46 || scene == 48 || scene == 50 || scene == 51 || scene == 52 || scene == 53 || scene == 54 || scene == 56 || scene == 55 || scene == 60 || scene == 66)
                 {
                     Application.Exit();
                 }
-                else if (scene == 29)
+                else if (scene == 4 || scene == 1 || scene == 27 || scene == 26 || scene == 8 || scene == 10 || scene == 30 || scene == 33 || scene == 34 || scene == 57 || scene == 63 || scene == 28 || scene == 29 || scene == 31 || scene == 32 || scene == 35 || scene == 44 || scene == 47 || scene == 49 || scene == 64)
                 {
                     Application.Exit();
-                }
-                else if (scene == 31)
-                {
-                    Application.Exit();
-                }
-                else if (scene == 32)
-                {
-                    Application.Exit();
-                }
-                else if (scene == 35)
-                {
-                    Application.Exit();
-                }
-                else if (scene == 44)
-                {
-                    Application.Exit();
-                }
-                else if (scene == 47)
-                {
-                    Application.Exit();
-                }
-                else if (scene == 49)
-                {
-                    Application.Exit();
-                }
-                else if (scene == 55)
-                {
-                    Application.Exit();
-                }
-                else if (scene == 60)
-                {
-                    Application.Exit();
-                }
-                else if (scene == 64)
-                {
-                    Application.Exit();
-                }
-                else if (scene == 66)
-                {
-                    Application.Exit();
-                }
 
+                }                              
             }
             else if (e.KeyCode == Keys.C)
             {
@@ -210,14 +133,14 @@ namespace SummativeUnit3
             {
                 case 0:  //start scene 
                     situationLabel.Text = "You wake up on the edge of a forest. You are curently alone and you seem to be fine other than a large gash in your left arm. You think it would be best to... ";
-                    aOutputLabel.Text = "Wrap up the wound with you sweater."; //goes to scene 2
+                    aOutputLabel.Text = "Wrap up the wound with your sweater."; //goes to scene 2
                     bOutputLabel.Text = "Start to srceam for help."; //goes to scene 1
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.forestStart;
                     this.Controls.Add(imageLabel);
                     break;
                 case 1:
-                    situationLabel.Text = "No one comes for you, well, no human comes for you. An agressive animal comes and attacks you, because you are weak, you are unable to defend yourself. You suffer an unimaginable death. Would you like to play again?"; //Death
+                    situationLabel.Text = "No one comes for you, well, no human comes for you. An agressive animal comes and attacks you. Because you are weak, you are unable to defend yourself. You suffer an unimaginable death. Would you like to play again?"; //Death
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
@@ -271,7 +194,7 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Find the pilot, you need more information and she's the one who will have the most. "; //goes to scene 12
                     bOutputLabel.Text = "Go to find more resources you may be here for a while, you'll need more water and food."; //goes to scene 13
                     cOutputLabel.Text = "Trust someone's coming, stand look out for incoming boats and planes."; //goes to scene 14 
-                    imageLabel.Image = Properties.Resources.SearchRescueChopper;
+                    imageLabel.Image = Properties.Resources.searchRescueChopper;
                     this.Controls.Add(imageLabel);
                     break;
                 case 8:
@@ -313,6 +236,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Try to save him, he will know as much as the pilot did."; //goes to scene 19
                     bOutputLabel.Text = "Know you don't have enough medical knowledge to save him and think you might end up injuring him further. You should try something else."; //goes to scene 20
                     cOutputLabel.Text = "";
+                    imageLabel.Image = Properties.Resources.hat;
+                    this.Controls.Add(imageLabel);
                     break;
                 case 13:
                     situationLabel.Text = "As you are looking for some resources you see a large amount of smoke coming form a while down the beach just inside the woods, probably part of the plane, you...";
@@ -332,8 +257,8 @@ namespace SummativeUnit3
                     break;
                 case 15:
                     situationLabel.Text = "You get to the other survivors, but become overwhelmed by all the injury and disaster, you...";
-                    aOutputLabel.Text = "Hand the first aid kit to someone more qualified to help, then go for a walk on your own to calm yourself down."; //goes to scene 26
-                    bOutputLabel.Text = "Ask someone to fix up your arm before you begin to help the others."; //goes to scene 27
+                    aOutputLabel.Text = "Hand the first aid kit to someone who appears to be more qualified to help, then go for a walk on your own to calm yourself down."; //goes to scene 26
+                    bOutputLabel.Text = "Ask someone who is availible to try and fix up your arm before you begin to help the others."; //goes to scene 27
                     cOutputLabel.Text = "Power through and start to help right away."; //goes to scene 28
                     imageLabel.Image = Properties.Resources.nastyWater;
                     this.Controls.Add(imageLabel);
@@ -375,6 +300,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "The transmitter in the cockpit, so you can contact rescue."; //goes to scene 40
                     bOutputLabel.Text = "Civilization, we need people."; //goes to scene 41
                     cOutputLabel.Text = "The flare gun in the tail, someone will see a flare."; //goes to scene 42
+                    imageLabel.Image = Properties.Resources.equipment;
+                    this.Controls.Add(imageLabel);
                     break;
                 case 21:
                     situationLabel.Text = "You precariously search what you believe to be the tail end of the plane, eventually finding a flare gun, but only one flare. You could fire now with a 65% chance of someone spotting the flare or you could wait until nightfall which brings many other dangers, though there is then an 85% chance of someone spotting your flare, you...";
@@ -409,7 +336,7 @@ namespace SummativeUnit3
                     this.Controls.Add(imageLabel);
                     break;
                 case 25:
-                    situationLabel.Text = "When roaming the forest you come across what seems to be a dog barking and running back and forth. You don't think she's wild but there's no garuntee, you...";
+                    situationLabel.Text = "When roaming the forest you come across what seems to be a dog barking and running back and forth. You don't think it's wild but there's no garuntee, you...";
                     aOutputLabel.Text = "Approach the dog, try to tame it and get a better look."; //goes to scene 55
                     bOutputLabel.Text = "Leave it and head back to the beach."; //goes to scene 56
                     cOutputLabel.Text = "";
@@ -426,10 +353,12 @@ namespace SummativeUnit3
                     failurePlayer.Play();
                     break;
                 case 27:
-                    situationLabel.Text = "Unfortunately the person trying to help you is almost as unqualified as you are when it comes to medicine. They make some vital, deathly, mistakes. Would you like to play again?"; //Death
+                    situationLabel.Text = "Unfortunately the person you chose to try to help you is almost as unqualified as you are when it comes to medicine. They make some vital, deathly, mistakes. Would you like to play again?"; //Death
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    imageLabel.Image = Properties.Resources.badDoctor;
+                    this.Controls.Add(imageLabel);
                     failurePlayer.Play();
                     break;
                 case 28:
@@ -437,7 +366,7 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
-                    imageLabel.Image = Properties.Resources.blueCarryOn;
+                    imageLabel.Image = Properties.Resources.portableTransmitter;
                     this.Controls.Add(imageLabel);
                     successPlayer.Play();
                     break;
@@ -448,6 +377,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.rescue;
                     this.Controls.Add(imageLabel);
+                    successPlayer.Play();
                     break;
                 case 30:
                     situationLabel.Text = "You get frustrated pretty quickly making a vital mistake and electrocuting yourself, a real shocker. Would you like to play again?"; //Death
@@ -507,12 +437,16 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Go on offense, grab a near by branch and attack."; //goes to scene 57
                     bOutputLabel.Text = "Screaming."; // goes to scene 58
                     cOutputLabel.Text = "";
+                    imageLabel.Image = Properties.Resources.stick;
+                    this.Controls.Add(imageLabel);
                     break;
                 case 37:
                     situationLabel.Text = "You are unable to find the water quick enough, you pass out because of dehydration. No one helps you, then you die. Would you like to play again?"; //Death
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    imageLabel.Image = Properties.Resources.dehydrated;
+                    this.Controls.Add(imageLabel);
                     failurePlayer.Play();
                     break;
                 case 38:
@@ -525,14 +459,16 @@ namespace SummativeUnit3
                     failurePlayer.Play();
                     break;
                 case 39:
-                    situationLabel.Text = "It's salt water, you drink to much, making you sick and bringing you death. Would you like to play again?"; //Death
+                    situationLabel.Text = "The water gives you some mighty fine diseases which then bring you death. Would you like to play again?"; //Death
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    imageLabel.Image = Properties.Resources.diseases;
+                    this.Controls.Add(imageLabel);
                     failurePlayer.Play();
                     break;
                 case 40:
-                    situationLabel.Text = "after searching you are able to find the frontend of the plane where you locate the transmitter. Too bad it was getting dark and had no knowledge in technology, you get frustrated ending in electrocution. Would you like to play agian?"; //Death
+                    situationLabel.Text = "After searching you are able to find the frontend of the plane where you locate the transmitter. Too bad you had no knowledge in technology. You get frustrated pretty quickly ending in electrocution. Would you like to play agian?"; //Death
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
@@ -554,6 +490,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Ok."; //chance either goes to scene 59 or 60
                     bOutputLabel.Text = "";
                     cOutputLabel.Text = "";
+                    imageLabel.Image = Properties.Resources.smokey;
+                    this.Controls.Add(imageLabel);
                     break;
                 case 43:
                     situationLabel.Text = "Your flare goes unnoticed but it does clip a tree which causes a large forest fire, igniting the remainder of the tail and causing a large explosion. Blowing you and many other survivors to smitherines. Atleast you went out with a bang. Would you like to play again?"; //Death
@@ -565,7 +503,7 @@ namespace SummativeUnit3
                     failurePlayer.Play();
                     break;
                 case 44:
-                    situationLabel.Text = "Someone in a low flying plane notices your flare. Rescue arrives a few hours later. Congratulations, you ahve saved yourself and many others. Would you like to play again?"; //Success
+                    situationLabel.Text = "Someone in a low flying plane notices your flare. Rescue arrives a few hours later. Congratulations, you saved yourself and many others. Would you like to play again?"; //Success
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
@@ -578,6 +516,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Go on offense, grab a near by branch and attack."; //goes to scene 61
                     bOutputLabel.Text = "Screaming."; //goes to scene 62
                     cOutputLabel.Text = "";
+                    imageLabel.Image = Properties.Resources.stick;
+                    this.Controls.Add(imageLabel);
                     break;
                 case 46:
                     situationLabel.Text = "Several scorpions crawl out of the bag and bite you, it only takes a few hours for the poisson to kick in. Would you like to play again?"; //Death
@@ -679,11 +619,11 @@ namespace SummativeUnit3
                     failurePlayer.Play();
                     break;
                 case 57:
-                    situationLabel.Text = "You are no match to the beast and you are violently killed and mangled. Would you like to play again?"; //Death
+                    situationLabel.Text = "You are no match to the monster and you are violently killed. Would you like to play again?"; //Death
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
-                    imageLabel.Image = Properties.Resources.komodoDragon;
+                    imageLabel.Image = Properties.Resources.dangerousAnimal;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
                     break;
@@ -694,6 +634,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.flare;
                     this.Controls.Add(imageLabel);
+                    flarePlayer.Play();
                     break;
                 case 59:
                     situationLabel.Text = "Your flare goes unseen and a raging storm hits the beach during the night, you are struck by lightning. Would you like to play again?"; //Death
@@ -718,7 +659,7 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
-                    imageLabel.Image = Properties.Resources.komodoDragon;
+                    imageLabel.Image = Properties.Resources.dangerousAnimal;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
                     break;
@@ -729,7 +670,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.flare;
                     this.Controls.Add(imageLabel);
-                    failurePlayer.Play();
+                    flarePlayer.Play();
                     break;
                 case 63:
                     situationLabel.Text = "No one notices the flare, a raging storm hits the beach during the night, you are struck by lightning. Would you like to play again?"; //Death

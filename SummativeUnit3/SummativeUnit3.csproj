@@ -164,12 +164,6 @@
     <None Include="Resources\guntherdec2013.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pilot-hat.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\62891c_lg.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\FM57011_full_1.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -234,6 +228,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\362206__taranp__horn-fail-wahwah-1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\362493__jalastram__shooting-sounds-039.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scorpion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62891c_lg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pilot-hat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airline_pilot_captain_hat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pilots-Hat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dehidrasi2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oz-5-cartoon-doctor-0809-lg-60642129.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Middle-size-collection-box-font-b-safety-b-font-font-b-equipment-b-font-Waterproof-font.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dangerous-animal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1462370587319.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cartoon-microbes.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
