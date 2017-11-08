@@ -626,7 +626,7 @@ namespace SummativeUnit3
                     imageLabel.Image = Properties.Resources.dangerousAnimal;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
-                    break;
+                    break; 
                 case 58:
                     situationLabel.Text = "The animal becomes frightened and runs back into the bushes you then fire the flare.";
                     aOutputLabel.Text = "Ok."; //chance either goes to scene 63 or 64
