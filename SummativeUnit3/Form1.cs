@@ -139,7 +139,7 @@ namespace SummativeUnit3
                     this.Controls.Add(imageLabel);
                     break;
                 case 1:
-                    situationLabel.Text = "No one comes for you, well, no human comes for you. An agressive animal comes and attacks you. Because you are weak, you are unable to defend yourself. You suffer a painful death. Would you like to play again?"; //Death
+                    situationLabel.Text = "No one comes for you, well, no human comes for you. An agressive animal comes and attacks. Because you are weak, you are unable to defend yourself. You suffer a painful death. Would you like to play again?"; //Death
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
@@ -158,7 +158,7 @@ namespace SummativeUnit3
                  case 3:
                     situationLabel.Text = "As you make your way across the beach you notice many other injured passengers so you...";
                     aOutputLabel.Text = "Stop to try and help."; //goes to scene 7
-                    bOutputLabel.Text = "Hate blood and know you can't help so you head to the water."; //goes to scene 8
+                    bOutputLabel.Text = "Hate blood and know you can't help, so you head to the water."; //goes to scene 8
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.beach;
                     this.Controls.Add(imageLabel);
@@ -231,7 +231,7 @@ namespace SummativeUnit3
                     this.Controls.Add(imageLabel);
                     break;
                 case 12:
-                    situationLabel.Text = "After further search You discover that the pilot is dead, but a few feet away you see someone who could be the copilot. He doesn't look like he is in much better shape than the pilot, but you check his pulse anyways. It's weak, but it's there, he is still alive, you choose to ";
+                    situationLabel.Text = "After further search You discover that the pilot is dead, but a few feet away you see someone who could be the copilot. He doesn't look like he is in much better shape than the pilot, but you check his pulse anyways. It's weak, but it's there, he is still alive, you choose to... ";
                     aOutputLabel.Text = "Try to save him, he will know as much as the pilot did."; //goes to scene 20
                     bOutputLabel.Text = "Know you don't have enough medical knowledge to save him and think you might end up injuring him further. You should try something else."; //goes to scene 19
                     cOutputLabel.Text = "";
@@ -288,7 +288,7 @@ namespace SummativeUnit3
                     break;
                 case 19:
                     situationLabel.Text = "You have now been on the beach for a long time you realize you are extremely thirsty and are worried of dehydration and heat stroke. You think it's best to... ";
-                    aOutputLabel.Text = "Search through the bags there must be some bottled water."; //goes to scene 37
+                    aOutputLabel.Text = "Search through the bags, there must be some bottled water."; //goes to scene 37
                     bOutputLabel.Text = "Go into the woods there's probably fresh water somewhere."; // goes to scene 38
                     cOutputLabel.Text = "Head to the ocean, it's closest and you're desperate."; //goes to scene 39
                     imageLabel.Image = Properties.Resources.thirsty;
@@ -476,11 +476,11 @@ namespace SummativeUnit3
                     failurePlayer.Play();
                     break;
                 case 41:
-                    situationLabel.Text = "You start to walk around the beach but it gets dark fast and you are now very far from the other survivors. You are now tired so you try to sleep by the edge of a the small mountain, unfortunately, large falling rocks crush you in your sleep. Would you like to play again?"; //Death
+                    situationLabel.Text = "You start to walk around the beach but it gets dark fast and you are now very far from the other survivors. You get tired so you try to sleep by the edge of a the small mountain, unfortunately, large falling rocks crush you in your sleep. Would you like to play again?"; //Death
                     aOutputLabel.Text = "Yes.";
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
-                    imageLabel.Image = Properties.Resources.boulders;
+                    imageLabel.Image = Properties.Resources.rocksFalling;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
                     break;
