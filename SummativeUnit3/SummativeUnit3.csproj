@@ -268,5 +268,11 @@
   <ItemGroup>
     <None Include="Resources\cartoon-microbes.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Make-a-Wooden-Dagger-Step-15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pointy-stick.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

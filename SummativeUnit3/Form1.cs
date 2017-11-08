@@ -30,9 +30,9 @@ namespace SummativeUnit3
 
             InitializeComponent();
             //Display Initial Message
-            situationLabel.Text = "You wake up on the edge of a forest. You are curently alone and you seem to be fine other than a large gash in your left arm. You think it would be best to... ";
-            aOutputLabel.Text = "Wrap up the wound with you sweater.";
-            bOutputLabel.Text = "Start to srceam for help.";
+            situationLabel.Text = "You wake up on the edge of a forest. You are currently alone and you seem to be fine other than a large gash in your left arm. You realize you have been in a plane crash, you think it would be best to... ";
+            aOutputLabel.Text = "Wrap up the wound with your sweater.";
+            bOutputLabel.Text = "Start to scream for help.";
         }
         private void chooseYourOwnAdventure_KeyDown(object sender, KeyEventArgs e)
         {
@@ -94,7 +94,6 @@ namespace SummativeUnit3
                 else if (scene == 25) { scene = 56; }
                 else if (scene == 21) { scene = 45; }
                 else if (scene == 45) { scene = 62; }
-                else if (scene == 12) { scene = 20; }
                 else if (scene == 20) { scene = 41; }
                 else if (scene == 19) { scene = 38; }
                 else if (scene == 6) { scene = 54; }
@@ -132,15 +131,15 @@ namespace SummativeUnit3
             switch (scene)
             {
                 case 0:  //start scene 
-                    situationLabel.Text = "You wake up on the edge of a forest. You are curently alone and you seem to be fine other than a large gash in your left arm. You think it would be best to... ";
+                    situationLabel.Text = "You wake up on the edge of a forest. You are currently alone and you seem to be fine other than a large gash in your left arm. You realize that you have been in a plane crash, you think it would be best to... ";
                     aOutputLabel.Text = "Wrap up the wound with your sweater."; //goes to scene 2
-                    bOutputLabel.Text = "Start to srceam for help."; //goes to scene 1
+                    bOutputLabel.Text = "Start to scream for help."; //goes to scene 1
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.forestStart;
                     this.Controls.Add(imageLabel);
                     break;
                 case 1:
-                    situationLabel.Text = "No one comes for you, well, no human comes for you. An agressive animal comes and attacks you. Because you are weak, you are unable to defend yourself. You suffer an unimaginable death. Would you like to play again?"; //Death
+                    situationLabel.Text = "No one comes for you, well, no human comes for you. An agressive animal comes and attacks you. Because you are weak, you are unable to defend yourself. You suffer a painful death. Would you like to play again?"; //Death
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
@@ -156,7 +155,7 @@ namespace SummativeUnit3
                     imageLabel.Image = Properties.Resources.beachForestMountain;
                     this.Controls.Add(imageLabel);
                     break;
-                case 3:
+                 case 3:
                     situationLabel.Text = "As you make your way across the beach you notice many other injured passengers so you...";
                     aOutputLabel.Text = "Stop to try and help."; //goes to scene 7
                     bOutputLabel.Text = "Hate blood and know you can't help so you head to the water."; //goes to scene 8
@@ -165,7 +164,7 @@ namespace SummativeUnit3
                     this.Controls.Add(imageLabel);
                     break;
                 case 4:
-                    situationLabel.Text = "You head into the woods but throughout your journey you trip and end up falling for what seems like miles down a steep hill. You land on an unnfortunately pointy pile of rocks. Your injuries are too extensive and you slowly accept your death. Would you like to play again?"; //Death
+                    situationLabel.Text = "You head into the woods but throughout your journey you trip and end up falling for what seems like miles down a steep hill. You land on an unfortunately pointy pile of rocks. Your injuries are too extensive and you slowly accept your death. Would you like to play again?"; //Death
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
@@ -190,7 +189,7 @@ namespace SummativeUnit3
                     this.Controls.Add(imageLabel);
                     break;
                 case 7:
-                    situationLabel.Text = "You start to help a flight attendant who has an injury to her leg. She tells you that in crash situation such as this one, it usually takes a couple of hours for rescue troops to come and save the survivors. You think the best thing to do is... ";
+                    situationLabel.Text = "You start to help a flight attendant who has an injury to her leg. She tells you that in crash situations such as this one, it usually takes a couple of hours for rescue troops to come and save the survivors. You think the best thing to do is... ";
                     aOutputLabel.Text = "Find the pilot, you need more information and she's the one who will have the most. "; //goes to scene 12
                     bOutputLabel.Text = "Go to find more resources you may be here for a while, you'll need more water and food."; //goes to scene 13
                     cOutputLabel.Text = "Trust someone's coming, stand look out for incoming boats and planes."; //goes to scene 14 
@@ -233,8 +232,8 @@ namespace SummativeUnit3
                     break;
                 case 12:
                     situationLabel.Text = "After further search You discover that the pilot is dead, but a few feet away you see someone who could be the copilot. He doesn't look like he is in much better shape than the pilot, but you check his pulse anyways. It's weak, but it's there, he is still alive, you choose to ";
-                    aOutputLabel.Text = "Try to save him, he will know as much as the pilot did."; //goes to scene 19
-                    bOutputLabel.Text = "Know you don't have enough medical knowledge to save him and think you might end up injuring him further. You should try something else."; //goes to scene 20
+                    aOutputLabel.Text = "Try to save him, he will know as much as the pilot did."; //goes to scene 20
+                    bOutputLabel.Text = "Know you don't have enough medical knowledge to save him and think you might end up injuring him further. You should try something else."; //goes to scene 19
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.hat;
                     this.Controls.Add(imageLabel);
@@ -272,7 +271,7 @@ namespace SummativeUnit3
                     this.Controls.Add(imageLabel);
                     break;
                 case 17:
-                    situationLabel.Text = "You begin helping a man who is concerned as his dog was on the plane as well. He begs you to help find the dog. He tells you how special this dog is to him and informs you she is adventurous, so she's probably in the woods and she goes by the name Zuza. You tell him...";
+                    situationLabel.Text = "You begin helping a man who is concerned, as his dog was on the plane as well. He begs you to help find the dog. He tells you how special this dog is to him and informs you she is adventurous, so she's probably in the woods. She goes by the name Zuza. You tell him...";
                     aOutputLabel.Text = "You will absolutely try and help so you head into the woods. "; //goes to scene 32
                     bOutputLabel.Text = "You are very sorry but there probably isn't much you can do plus the woods are large and dangerous too."; //goes to scene 33
                     cOutputLabel.Text = "";
@@ -362,7 +361,7 @@ namespace SummativeUnit3
                     failurePlayer.Play();
                     break;
                 case 28:
-                    situationLabel.Text = "The lady you are helping tells you of her severe plane crash phobia. You start to pay attention when she tells you she always keeps a portable transmitter in her blue carry on. After searching through what seemed like a million blue suitcases, you find the right bag. The transmitter is straght forward and still in tack. You recieve a signal and rescue comes two hours later. Congratulations, you save yourself and many others. Would yu like to play again?";
+                    situationLabel.Text = "The lady you are helping tells you of her severe plane crash phobia. You start to pay attention when she tells you she always keeps a portable transmitter in her blue carry on. After searching through what seemed like a million blue suitcases, you find the right bag. The transmitter is straght forward and still in tack. You recieve a signal and rescue comes a few hours later. Congratulations, you save yourself and many others. Would yu like to play again?";
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
@@ -389,7 +388,7 @@ namespace SummativeUnit3
                     failurePlayer.Play();
                     break;
                 case 31:
-                    situationLabel.Text = "You continue to search the cockpit for indicators, instructions or anything that would help with the maintnance of the transmitter. After awhile you locate an instruction manual and get the transmitter to work all by yourself, you recieve a signal and rescue troops arrive two hours later. Congratulations, you saved yourself and many others. Wwould you like to play again?"; //Success
+                    situationLabel.Text = "You continue to search the cockpit for indicators, instructions or anything that would help with the maintnance of the transmitter. After awhile you locate an instruction manual and get the transmitter to work all by yourself, you recieve a signal and rescue troops arrive a few hours later. Congratulations, you saved yourself and many others. Would you like to play again?"; //Success
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
@@ -398,7 +397,7 @@ namespace SummativeUnit3
                     successPlayer.Play();
                     break;
                 case 32:
-                    situationLabel.Text = "You are in the woods calling for Zuza when you hear a distant barking. You get excited when you spot a German shepard, when it begins to run you follow it all the way to a small town. The people explain you are on an island called Pitcairn, located in the middle of the Pacific. Congratulations, you and Zuza saved yourselves and many others. Would you like to play again?"; //Success
+                    situationLabel.Text = "You are in the woods calling for Zuza when you hear a distant barking. You get excited when you spot a German shepard, when she begins to run you follow her, all the way to a small town. The people explain you are on an island called Pitcairn, located in the middle of the Pacific. Congratulations, you and Zuza saved yourselves and many others. Would you like to play again?"; //Success
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
@@ -434,7 +433,7 @@ namespace SummativeUnit3
                     break;
                 case 36:
                     situationLabel.Text = "It is now night time, you are ready to fire your flare and because you only have one chance and you need to concentrate. Just as you are about to shoot, a large animal burst out of the bushes and is now coming at you, you approach the situation by...";
-                    aOutputLabel.Text = "Go on offense, grab a near by branch and attack."; //goes to scene 57
+                    aOutputLabel.Text = "Going on offense, grab a near by branch and attack."; //goes to scene 57
                     bOutputLabel.Text = "Screaming."; // goes to scene 58
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.stick;
@@ -450,7 +449,7 @@ namespace SummativeUnit3
                     failurePlayer.Play();
                     break;
                 case 38:
-                    situationLabel.Text = "You find water in the forest, it is so glorious you decide to rinse off but the current is strong and then, oh no, water fall ahead there is no way to escape. Would you like to play again?"; //Death
+                    situationLabel.Text = "You find water in the forest, it is so glorious you decide to rinse off. But the current beomes stronger and stronger, then, oh no! Water fall ahead! There is no way to escape. Would you like to play again?"; //Death
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
@@ -513,7 +512,7 @@ namespace SummativeUnit3
                     break;
                 case 45:
                     situationLabel.Text = "It's now night time, you are ready to fire your flare and because you only have one chance and you need to concentrate. Just as you are about to shoot, a large animal burst out of the bushes and is now coming at you, you approach the situation by...";
-                    aOutputLabel.Text = "Go on offense, grab a near by branch and attack."; //goes to scene 61
+                    aOutputLabel.Text = "Going on offense, grab a near by branch and attack."; //goes to scene 61
                     bOutputLabel.Text = "Screaming."; //goes to scene 62
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.stick;
@@ -601,7 +600,7 @@ namespace SummativeUnit3
                     failurePlayer.Play();
                     break;
                 case 55:
-                    situationLabel.Text = "The dog is calm and appears to have a collar. Her name appears to be Zuza, you assume that she belonged to a passenger on the plane so when she runs, you follow her. After what seems to have been miles of running you realize she has brough you to civilization. Congratulations, you and Zuza have saved yourselves and many others. Would you like to play again?"; //Success
+                    situationLabel.Text = "The dog is calm and has a collar. Her name is Zuza, you assume that she belonged to a passenger on the plane so when she runs, you follow her. After what seems to have been miles of running you realize she has brough you to civilization. Congratulations, you and Zuza have saved yourselves and many others. Would you like to play again?"; //Success
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";

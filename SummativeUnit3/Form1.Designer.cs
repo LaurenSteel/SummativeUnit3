@@ -41,15 +41,15 @@
             // 
             // situationLabel
             // 
-            this.situationLabel.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.situationLabel.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.situationLabel.Location = new System.Drawing.Point(12, 9);
             this.situationLabel.Name = "situationLabel";
-            this.situationLabel.Size = new System.Drawing.Size(306, 412);
+            this.situationLabel.Size = new System.Drawing.Size(306, 437);
             this.situationLabel.TabIndex = 0;
             // 
             // aOutputLabel
             // 
-            this.aOutputLabel.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aOutputLabel.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aOutputLabel.Location = new System.Drawing.Point(42, 446);
             this.aOutputLabel.Name = "aOutputLabel";
             this.aOutputLabel.Size = new System.Drawing.Size(896, 74);
@@ -57,25 +57,25 @@
             // 
             // aLabel
             // 
-            this.aLabel.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aLabel.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aLabel.Location = new System.Drawing.Point(12, 446);
             this.aLabel.Name = "aLabel";
-            this.aLabel.Size = new System.Drawing.Size(25, 25);
+            this.aLabel.Size = new System.Drawing.Size(35, 30);
             this.aLabel.TabIndex = 2;
             this.aLabel.Text = "A.";
             // 
             // bLabel
             // 
-            this.bLabel.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bLabel.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bLabel.Location = new System.Drawing.Point(12, 542);
             this.bLabel.Name = "bLabel";
-            this.bLabel.Size = new System.Drawing.Size(25, 25);
+            this.bLabel.Size = new System.Drawing.Size(35, 26);
             this.bLabel.TabIndex = 3;
             this.bLabel.Text = "B.";
             // 
             // bOutputLabel
             // 
-            this.bOutputLabel.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bOutputLabel.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bOutputLabel.Location = new System.Drawing.Point(42, 542);
             this.bOutputLabel.Name = "bOutputLabel";
             this.bOutputLabel.Size = new System.Drawing.Size(896, 74);
@@ -83,16 +83,16 @@
             // 
             // cLabel
             // 
-            this.cLabel.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cLabel.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cLabel.Location = new System.Drawing.Point(12, 625);
             this.cLabel.Name = "cLabel";
-            this.cLabel.Size = new System.Drawing.Size(25, 25);
+            this.cLabel.Size = new System.Drawing.Size(35, 29);
             this.cLabel.TabIndex = 5;
             this.cLabel.Text = "C.";
             // 
             // cOutputLabel
             // 
-            this.cOutputLabel.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cOutputLabel.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cOutputLabel.Location = new System.Drawing.Point(42, 625);
             this.cOutputLabel.Name = "cOutputLabel";
             this.cOutputLabel.Size = new System.Drawing.Size(896, 74);
