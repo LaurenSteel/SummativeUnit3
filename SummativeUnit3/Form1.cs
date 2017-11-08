@@ -1,15 +1,7 @@
 ﻿//Lauren Steel, October 31 2017, Choose you own adventure, demonstrating multiple decisions and random numbers 
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
-using System.Threading;
 
 namespace SummativeUnit3
 {
@@ -34,6 +26,8 @@ namespace SummativeUnit3
             situationLabel.Text = "You wake up on the edge of a forest. You are currently alone and you seem to be fine other than a large gash in your left arm. You realize you have been in a plane crash, you think it would be best to... ";
             aOutputLabel.Text = "Wrap up the wound with your sweater.";
             bOutputLabel.Text = "Start to scream for help.";
+            bLabel.Text = "B.";
+            cLabel.Text = "";           
         }
         private void chooseYourOwnAdventure_KeyDown(object sender, KeyEventArgs e)
         {
@@ -135,7 +129,9 @@ namespace SummativeUnit3
                     situationLabel.Text = "You wake up on the edge of a forest. You are currently alone and you seem to be fine other than a large gash in your left arm. You realize that you have been in a plane crash, you think it would be best to... ";
                     aOutputLabel.Text = "Wrap up the wound with your sweater."; //goes to scene 2
                     bOutputLabel.Text = "Start to scream for help."; //goes to scene 1
+                    bLabel.Text = "B.";
                     cOutputLabel.Text = "";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.forestStart;
                     this.Controls.Add(imageLabel);
                     break;
@@ -143,7 +139,9 @@ namespace SummativeUnit3
                     situationLabel.Text = "No one comes for you, well, no human comes for you. An agressive animal comes and attacks. Because you are weak, you are unable to defend yourself. You suffer a painful death. Would you like to play again?"; //Death
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
+                    bLabel.Text = "B.";
                     cOutputLabel.Text = "";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.komodoDragon;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
@@ -153,6 +151,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "To the beach that you can see vaguely through the trees."; //goes to scene 3
                     bOutputLabel.Text = "Deeper into the forest."; //goes to scene 4
                     cOutputLabel.Text = "Up the small mountain to get a better view."; //goes to scene 5
+                    bLabel.Text = "B.";
+                    cLabel.Text = "C.";
                     imageLabel.Image = Properties.Resources.beachForestMountain;
                     this.Controls.Add(imageLabel);
                     break;
@@ -160,7 +160,9 @@ namespace SummativeUnit3
                     situationLabel.Text = "As you make your way across the beach you notice many other injured passengers so you...";
                     aOutputLabel.Text = "Stop to try and help."; //goes to scene 7
                     bOutputLabel.Text = "Hate blood and know you can't help, so you head to the water."; //goes to scene 8
+                    bLabel.Text = "B.";
                     cOutputLabel.Text = "";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.beach;
                     this.Controls.Add(imageLabel);
                     break;
@@ -169,6 +171,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.deeperIntoForest;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
@@ -178,6 +182,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Straight to the front end of the plane."; //goes to scene 9
                     bOutputLabel.Text = "Further up the mountain, the plane could still explode. It's much safer to keep your distance."; //goes to scene 10
                     cOutputLabel.Text = "To the smoking tail."; //goes to scene 11
+                    bLabel.Text = "B.";
+                    cLabel.Text = "C.";
                     imageLabel.Image = Properties.Resources.hiking;
                     this.Controls.Add(imageLabel);
                     break;
@@ -186,6 +192,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Climb the tree in hopes to pick the coconuts."; //goes to scene 53
                     bOutputLabel.Text = "Shake the tree from the bottom so the coconuts fall to the ground."; //goes to scene 54
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.coconuts;
                     this.Controls.Add(imageLabel);
                     break;
@@ -194,6 +202,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Find the pilot, you need more information and she's the one who will have the most. "; //goes to scene 12
                     bOutputLabel.Text = "Go to find more resources you may be here for a while, you'll need more water and food."; //goes to scene 13
                     cOutputLabel.Text = "Trust someone's coming, stand look out for incoming boats and planes."; //goes to scene 14 
+                    bLabel.Text = "B.";
+                    cLabel.Text = "C.";
                     imageLabel.Image = Properties.Resources.searchRescueChopper;
                     this.Controls.Add(imageLabel);
                     break;
@@ -202,6 +212,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.underTow;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
@@ -211,6 +223,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Grab the first aid kit and follow the screams down the beach to go help the injured."; //goes to scene 15
                     bOutputLabel.Text = "Continue to investigate the front end of the plane."; //goes to scene 16
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.firstAid;
                     this.Controls.Add(imageLabel);
                     break;
@@ -219,6 +233,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.rocksFalling;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
@@ -228,6 +244,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Stop to try and help the people."; //goes to scene 17
                     bOutputLabel.Text = "Continue to the tail."; //goes to scene 18
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.smokey;
                     this.Controls.Add(imageLabel);
                     break;
@@ -236,6 +254,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Try to save him, he will know as much as the pilot did."; //goes to scene 20
                     bOutputLabel.Text = "Know you don't have enough medical knowledge to save him and think you might end up injuring him further. You should try something else."; //goes to scene 19
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.hat;
                     this.Controls.Add(imageLabel);
                     break;
@@ -244,6 +264,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Go to the smoke, the plane will have so many useful tools."; //goes to scene 21
                     bOutputLabel.Text = "Smoke means fire, you stay put and begin to rumage through what you can find on the beach."; //goes to scene 22
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.smokey;
                     this.Controls.Add(imageLabel);
                     break;
@@ -252,6 +274,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Start to make a fire."; //goes to scene 23
                     bOutputLabel.Text = "Try to find some food."; //goes to scene 24
                     cOutputLabel.Text = "Go to find somewhere safe and sheltered in the forest where you can sleep."; //goes to scene 25
+                    bLabel.Text = "B.";
+                    cLabel.Text = "C.";
                     imageLabel.Image = Properties.Resources.darkBeach;
                     this.Controls.Add(imageLabel);
                     break;
@@ -260,6 +284,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Hand the first aid kit to someone who appears to be more qualified to help, then go for a walk on your own to calm yourself down."; //goes to scene 26
                     bOutputLabel.Text = "Ask someone who is availible to try and fix up your arm before you begin to help the others."; //goes to scene 27
                     cOutputLabel.Text = "Power through and start to help right away."; //goes to scene 28
+                    bLabel.Text = "B.";
+                    cLabel.Text = "C.";
                     imageLabel.Image = Properties.Resources.nastyWater;
                     this.Controls.Add(imageLabel);
                     break;
@@ -268,6 +294,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Run to the people on the beach to get help, someone there must know what to do."; //goes to scene 29
                     bOutputLabel.Text = "Try to figure it out on your own, it can't be that hard."; //goes to scene 30
                     cOutputLabel.Text = "Keep searching the cockpit."; //goes to scene 31
+                    bLabel.Text = "B.";
+                    cLabel.Text = "C.";
                     imageLabel.Image = Properties.Resources.stationaryTransmitter;
                     this.Controls.Add(imageLabel);
                     break;
@@ -276,6 +304,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "You will absolutely try and help so you head into the woods. "; //goes to scene 32
                     bOutputLabel.Text = "You are very sorry but there probably isn't much you can do plus the woods are large and dangerous too."; //goes to scene 33
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.bigForest;
                     this.Controls.Add(imageLabel);
                     break;
@@ -284,6 +314,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Fire now, you have to get off the island."; //chance either goes to scene 34 or 35
                     bOutputLabel.Text = "Wait until night fall, you only have one shot at this."; //goes to scene 36
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.flareGun;
                     this.Controls.Add(imageLabel);
                     break;
@@ -292,6 +324,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Search through the bags, there must be some bottled water."; //goes to scene 37
                     bOutputLabel.Text = "Go into the woods there's probably fresh water somewhere."; // goes to scene 38
                     cOutputLabel.Text = "Head to the ocean, it's closest and you're desperate."; //goes to scene 39
+                    bLabel.Text = "B.";
+                    cLabel.Text = "C.";
                     imageLabel.Image = Properties.Resources.thirsty;
                     this.Controls.Add(imageLabel);
                     break;
@@ -300,6 +334,7 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "The transmitter in the cockpit, so you can contact rescue."; //goes to scene 40
                     bOutputLabel.Text = "Civilization, we need people."; //goes to scene 41
                     cOutputLabel.Text = "The flare gun in the tail, someone will see a flare."; //goes to scene 42
+                    cLabel.Text = "C.";
                     imageLabel.Image = Properties.Resources.equipment;
                     this.Controls.Add(imageLabel);
                     break;
@@ -308,6 +343,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Fire now, you have to get off the island."; //chance goes to scene 43 or 44
                     bOutputLabel.Text = "Wait until night fall, you only have one shot at this."; //goes to scene 45
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.flareGun;
                     this.Controls.Add(imageLabel);
                     break;
@@ -316,6 +353,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "A pink bag."; //goes to scene 46
                     bOutputLabel.Text = "A blue bag."; //goes to scene 47
                     cOutputLabel.Text = "A black bag."; //goes to scene 48
+                    bLabel.Text = "B.";
+                    cLabel.Text = "C.";
                     imageLabel.Image = Properties.Resources.bag;
                     this.Controls.Add(imageLabel);
                     break;
@@ -324,6 +363,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Go into the forest to get some wood"; //goes to scene 49
                     bOutputLabel.Text = "Stay on the beach, it's getting dark and you think the woods are too dangerous. You can try to burn the resources you can find on the beach such as odd items or branches. "; //goes to scene 50
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.lighter;
                     this.Controls.Add(imageLabel);
                     break;
@@ -332,6 +373,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Fishing."; //goes to scene 51
                     bOutputLabel.Text = "Berries."; //goes to scene 52
                     cOutputLabel.Text = "Coconuts."; //goes to scene 6
+                    bLabel.Text = "B.";
+                    cLabel.Text = "C.";
                     imageLabel.Image = Properties.Resources.berries;
                     this.Controls.Add(imageLabel);
                     break;
@@ -340,6 +383,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Approach the dog, try to tame it and get a better look."; //goes to scene 55
                     bOutputLabel.Text = "Leave it and head back to the beach."; //goes to scene 56
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.dog;
                     this.Controls.Add(imageLabel);
                     break;
@@ -348,6 +393,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.komodoDragon;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
@@ -357,6 +404,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.badDoctor;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
@@ -366,6 +415,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.portableTransmitter;
                     this.Controls.Add(imageLabel);
                     successPlayer.Play();
@@ -375,6 +426,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.rescue;
                     this.Controls.Add(imageLabel);
                     successPlayer.Play();
@@ -384,6 +437,7 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.elecrtrocuted;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
@@ -393,6 +447,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.rescue;
                     this.Controls.Add(imageLabel);
                     successPlayer.Play();
@@ -402,6 +458,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.pitcairn;
                     this.Controls.Add(imageLabel);
                     successPlayer.Play();
@@ -410,7 +468,10 @@ namespace SummativeUnit3
                     situationLabel.Text = "You begin to walk away from the man when you step on a large snake. Unfortunately it's not a forgiving species, it bites you, you die. Would you like to play again?"; //Death
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
-                    cOutputLabel.Text = ""; imageLabel.Image = Properties.Resources.snake;
+                    cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
+                    imageLabel.Image = Properties.Resources.snake;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
                     break;
@@ -419,6 +480,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.forestFire;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
@@ -428,6 +491,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes.";
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.rescue;
                     this.Controls.Add(imageLabel);
                     successPlayer.Play();
@@ -437,6 +502,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Going on offense, grab a near by branch and attack."; //goes to scene 57
                     bOutputLabel.Text = "Screaming."; // goes to scene 58
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.stick;
                     this.Controls.Add(imageLabel);
                     break;
@@ -445,6 +512,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.dehydrated;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
@@ -454,6 +523,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.waterFall;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
@@ -463,6 +534,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.diseases;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
@@ -472,6 +545,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.elecrtrocuted;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
@@ -481,6 +556,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes.";
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.rocksFalling;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
@@ -490,6 +567,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Ok."; //chance either goes to scene 59 or 60
                     bOutputLabel.Text = "";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.smokey;
                     this.Controls.Add(imageLabel);
                     break;
@@ -498,6 +577,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.forestFire;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
@@ -507,6 +588,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.rescue;
                     this.Controls.Add(imageLabel);
                     successPlayer.Play();
@@ -516,6 +599,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Going on offense, grab a near by branch and attack."; //goes to scene 61
                     bOutputLabel.Text = "Screaming."; //goes to scene 62
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.stick;
                     this.Controls.Add(imageLabel);
                     break;
@@ -524,6 +609,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.scorpion;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
@@ -533,6 +620,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.portableTransmitter; 
                     this.Controls.Add(imageLabel);
                     successPlayer.Play();
@@ -542,6 +631,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes.";
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.snake;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
@@ -551,6 +642,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.rescue;
                     this.Controls.Add(imageLabel);
                     successPlayer.Play();
@@ -560,6 +653,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes.";
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.flame;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
@@ -569,6 +664,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.drownDeath;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
@@ -578,6 +675,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.poison;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
@@ -587,6 +686,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.pointyRock;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
@@ -596,6 +697,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes.";
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.fallingCoconuts;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
@@ -605,6 +708,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.pitcairn;
                     this.Controls.Add(imageLabel);
                     successPlayer.Play();
@@ -614,6 +719,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.pit;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
@@ -623,18 +730,21 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.dangerousAnimal;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
-                    break; 
+                    break;  
                 case 58:
                     situationLabel.Text = "The animal becomes frightened and runs back into the bushes you then fire the flare.";
                     aOutputLabel.Text = "Ok."; //chance either goes to scene 63 or 64
                     bOutputLabel.Text = "";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.flare;
                     this.Controls.Add(imageLabel);
-                    Thread.Sleep(5000);
                     flarePlayer.Play();
                     break;
                 case 59:
@@ -642,6 +752,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.lightning;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
@@ -651,6 +763,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes.";
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.rescue;
                     this.Controls.Add(imageLabel);
                     successPlayer.Play();
@@ -660,6 +774,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.dangerousAnimal;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
@@ -669,9 +785,10 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Ok."; //chance either goes to scene 65 or 66
                     bOutputLabel.Text = "";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.flare;
                     this.Controls.Add(imageLabel);
-                    Thread.Sleep(5000);
                     flarePlayer.Play();
                     break;
                 case 63:
@@ -679,6 +796,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.lightning;
                     this.Controls.Add(imageLabel);
                     failurePlayer.Play();
@@ -688,6 +807,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.rescue;
                     this.Controls.Add(imageLabel);
                     successPlayer.Play();
@@ -697,6 +818,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.lightning;
                     this.Controls.Add(imageLabel);
                     successPlayer.Play();
@@ -706,6 +829,8 @@ namespace SummativeUnit3
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
+                    bLabel.Text = "B.";
+                    cLabel.Text = "";
                     imageLabel.Image = Properties.Resources.rescue;
                     this.Controls.Add(imageLabel);
                     successPlayer.Play();

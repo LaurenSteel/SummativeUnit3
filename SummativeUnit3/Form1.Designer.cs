@@ -71,7 +71,6 @@
             this.bLabel.Name = "bLabel";
             this.bLabel.Size = new System.Drawing.Size(35, 26);
             this.bLabel.TabIndex = 3;
-            this.bLabel.Text = "B.";
             // 
             // bOutputLabel
             // 
@@ -88,7 +87,6 @@
             this.cLabel.Name = "cLabel";
             this.cLabel.Size = new System.Drawing.Size(35, 29);
             this.cLabel.TabIndex = 5;
-            this.cLabel.Text = "C.";
             // 
             // cOutputLabel
             // 
