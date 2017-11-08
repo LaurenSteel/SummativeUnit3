@@ -1,4 +1,4 @@
-﻿//Lauren Steel, October 31 2017, Choose you own adventure 
+﻿//Lauren Steel, October 31 2017, Choose you own adventure, demonstrating multiple decisions and random numbers 
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using System.Threading;
 
 namespace SummativeUnit3
 {
@@ -148,7 +149,7 @@ namespace SummativeUnit3
                     failurePlayer.Play();
                     break;
                 case 2:
-                    situationLabel.Text = "You lift yourself up and the way you see it you have three different ways to go. You choose to go...";
+                    situationLabel.Text = "You lift yourself up and the way you see it, you have three different ways to go. You choose to go...";
                     aOutputLabel.Text = "To the beach that you can see vaguely through the trees."; //goes to scene 3
                     bOutputLabel.Text = "Deeper into the forest."; //goes to scene 4
                     cOutputLabel.Text = "Up the small mountain to get a better view."; //goes to scene 5
@@ -173,10 +174,10 @@ namespace SummativeUnit3
                     failurePlayer.Play();
                     break;
                 case 5:
-                    situationLabel.Text = "You get to highground and spot the front end of the plane a while down the beach to your right. Then to your left a few miles down, smoke is emerging from just inside the woods. The smoke is thick but you can tell it's coming from the tail end of the plane, you go...";
+                    situationLabel.Text = "You get to highground and spot the front end of the plane is a while down the beach to your right. Then to your left a few miles down, smoke is emerging from just inside the woods. The smoke is thick but you can tell it's coming from the tail end of the plane, you go...";
                     aOutputLabel.Text = "Straight to the front end of the plane."; //goes to scene 9
-                    bOutputLabel.Text = "Continue up the mountain, the plane could still explode. It's much safer to keep your distance."; //goes to scene 10
-                    cOutputLabel.Text = "Head to the tail."; //goes to scene 11
+                    bOutputLabel.Text = "Further up the mountain, the plane could still explode. It's much safer to keep your distance."; //goes to scene 10
+                    cOutputLabel.Text = "To the smoking tail."; //goes to scene 11
                     imageLabel.Image = Properties.Resources.hiking;
                     this.Controls.Add(imageLabel);
                     break;
@@ -197,7 +198,7 @@ namespace SummativeUnit3
                     this.Controls.Add(imageLabel);
                     break;
                 case 8:
-                    situationLabel.Text = "You finally have a minute to relax in the cool ocean water, right up until a large wave and a strong undertow take you far from safety of the land, you eventually drown and die. Would you like to play again?"; //Death
+                    situationLabel.Text = "You finally have a minute to relax in the cool ocean water, right up until a large wave and a strong undertow take you far from safety of the land. You eventually drown and die. Would you like to play again?"; //Death
                     aOutputLabel.Text = "Yes."; 
                     bOutputLabel.Text = "No.";
                     cOutputLabel.Text = "";
@@ -240,7 +241,7 @@ namespace SummativeUnit3
                     break;
                 case 13:
                     situationLabel.Text = "As you are looking for some resources you see a large amount of smoke coming form a while down the beach just inside the woods, probably part of the plane, you...";
-                    aOutputLabel.Text = "Go to the smoke, the plane will have so much to offer."; //goes to scene 21
+                    aOutputLabel.Text = "Go to the smoke, the plane will have so many useful tools."; //goes to scene 21
                     bOutputLabel.Text = "Smoke means fire, you stay put and begin to rumage through what you can find on the beach."; //goes to scene 22
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.smokey;
@@ -287,7 +288,7 @@ namespace SummativeUnit3
                     this.Controls.Add(imageLabel);
                     break;
                 case 19:
-                    situationLabel.Text = "You have now been on the beach for a long time you realize you are extremely thirsty and are worried of dehydration and heat stroke. You think it's best to... ";
+                    situationLabel.Text = "You have now been on the beach for a long time, you realize you are extremely thirsty and are worried of dehydration and heat stroke. You think it's best to... ";
                     aOutputLabel.Text = "Search through the bags, there must be some bottled water."; //goes to scene 37
                     bOutputLabel.Text = "Go into the woods there's probably fresh water somewhere."; // goes to scene 38
                     cOutputLabel.Text = "Head to the ocean, it's closest and you're desperate."; //goes to scene 39
@@ -633,6 +634,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.flare;
                     this.Controls.Add(imageLabel);
+                    Thread.Sleep(5000);
                     flarePlayer.Play();
                     break;
                 case 59:
@@ -669,6 +671,7 @@ namespace SummativeUnit3
                     cOutputLabel.Text = "";
                     imageLabel.Image = Properties.Resources.flare;
                     this.Controls.Add(imageLabel);
+                    Thread.Sleep(5000);
                     flarePlayer.Play();
                     break;
                 case 63:
